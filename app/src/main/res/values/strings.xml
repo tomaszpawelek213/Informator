@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Informator</string>
+    <string name="button_login">zaloguj</string>
+    <string name="button_register">rejestracja</string>
+</resources>
