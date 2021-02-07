@@ -16,67 +16,79 @@
         android:layout_marginTop="@dimen/maring_top_15"
         android:src="@drawable/setings"/>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/ipAddressTextField"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_50"
-        android:hint="Adres Serwera">
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:gravity="center"
+        android:padding="@dimen/dimen_5">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/firstNameEditText"
+        <TextView
+            android:id="@+id/firstNameText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_weight="1"
+            android:text="Imie: Adam" />
 
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-
-        android:id="@+id/portServeraTextField"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_20"
-        android:hint="Port">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/lastNameEditText"
+        <Button
+            android:id="@+id/firstNameChangeButton"
+            android:layout_weight="2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_height="wrap_content"
+            android:text="Change" />
+    </LinearLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
 
-        android:id="@+id/keyTextField"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_20"
-        android:hint="Klucz">
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:gravity="center"
+        android:padding="@dimen/dimen_5">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/emailEditText"
+        <TextView
+            android:id="@+id/lastNameText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_weight="1"
+            android:text="Nazwisko: Pawełek" />
 
-    <com.google.android.material.switchmaterial.SwitchMaterial
-        android:id="@+id/changeSizePhotoSwitch"
+        <Button
+            android:id="@+id/lastNameCheangeButton"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_20"
-        android:checked="true"
-        android:text="Zmień rozmiar Zdjęcia" />
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:gravity="center"
+        android:padding="@dimen/dimen_5">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_weight="1"
+            android:text="Hasło:" />
 
+        <Button
+            android:id="@+id/passwordChangeButton"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change" />
+    </LinearLayout>
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/seveSetingButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Zapisz ustawienia"
-        android:layout_marginTop="@dimen/dimen_20"/>
 
 
 
