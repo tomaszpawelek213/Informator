@@ -20,5 +20,7 @@ class LoginFragment : Fragment() {
         view.findViewById<MaterialButton>(R.id.loginButton).setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
         }
+
+        view.findViewById<MaterialButton>(R.id.changeNameFragment)
     }
 }

@@ -6,53 +6,47 @@
     android:gravity="center_horizontal"
     android:paddingHorizontal="@dimen/dimen_50"
     android:orientation="vertical"
-    tools:context=".ChangePasswordFragment">
+    tools:context=".ChangeNameFragment">
 
 
-    <com.google.android.material.textfield.TextInputLayout
-
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_50"
-        android:hint="stare hasło">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/lastPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dimen_15"
-        android:hint="nowe hasło">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/newPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
+        android:text="Imię" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/firstNameTextField"
+
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_15"
-        android:hint="powtórz nowe hasło">
-
+        android:layout_marginTop="@dimen/dimen_5"
+        android:hint="">
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/repeatNewPassword"
+            android:id="@+id/editTextFirstName"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:ems="10"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:text="Nazwsiko" />
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:hint="">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTexLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton

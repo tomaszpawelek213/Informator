@@ -21,6 +21,15 @@ class SettingsFragment : Fragment () {
         view.findViewById<Button>(R.id.passwordChangeButton).setOnClickListener {
             findNavController().navigate(R.id.action_settingsFragment_to_changePasswordFragment)
         }
+
+
+        view.findViewById<Button>(R.id.firstNameChangeButton).setOnClickListener {
+            findNavController().navigate(R.id.action_settingsFragment_to_changeNameFragment)
+        }
+
+        view.findViewById<Button>(R.id.lastNameCheangeButton).setOnClickListener{
+            findNavController().navigate(R.id.action_settingsFragment_to_changeNameFragment)
+        }
     }
 
 

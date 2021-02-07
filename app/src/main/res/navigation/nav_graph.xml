@@ -56,12 +56,20 @@
             android:id="@+id/action_settingsFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
         <action
+            android:id="@+id/action_settingsFragment_to_changeNameFragment"
+            app:destination="@id/changeNameFragment" />
+        <action
             android:id="@+id/action_settingsFragment_to_changePasswordFragment"
             app:destination="@id/changePasswordFragment" />
     </fragment>
     <fragment
+        android:id="@+id/changeNameFragment"
+        android:name="com.example.informator.ChangeNameFragment"
+        android:label="fragment_change_name"
+        tools:layout="@layout/fragment_change_name" />
+    <fragment
         android:id="@+id/changePasswordFragment"
-        tools:layout="@layout/fragment_change_password"
         android:name="com.example.informator.ChangePasswordFragment"
-        android:label="ChangePasswordFragment" />
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" />
 </navigation>
